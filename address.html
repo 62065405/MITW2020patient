@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>address</title>
+        <style>
+            h1{
+                font-size: 70px;
+                text-align: center;
+                height: 50px;
+            }
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: 20px;
+            }
+            pre{
+                font-size: 20px;
+            }
+            div{
+                margin-left: 20%;
+                margin-right: 20%;
+                border-style: unset;
+
+            }
+            .url{
+                margin-left: 33%;
+                margin-right: 33%;
+                /* border-style: unset; */
+            }
+            li{
+                font-size: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <h1>address</h1>
+        <div>
+            
+        <p>住址。數值個數(0…n)，可不提供，或提供1到多個地址，可記錄居住地址、通訊地址、戶籍地址等資訊。原 FHIR 規範可包含 use(用途)、type(類別)、text(住址字串)、line(巷弄)、city(市)、district(區)、state(州省)、postalCode(郵遞區號)、country(國家)、period(使用期間) 等欄位，建議使用:
+        <p>use：地址用途，數值個數(0-1)，可不提供，或以home | work | temp | old | billing 等代碼表示 </p>
+        <p>type：型態為寄件或居住地址。數值個數(0-1)，可不提供，或以postal | physical | both 等代碼表示。 </p>
+        <p>text：字串型態的住址。數值個數(0-1)，可不提供，但通常會紀錄字串格式之住址。</p>
+        <p>postalCode：郵遞區號。可不提供(也可將 postalCode 直接加入 text 字串住址當中)，或記錄郵遞區號號碼。 </p>
+        <hr>
+        <p>議題：</p>
+        <p>i.	line(巷弄)、city(市)、district(區)、state(州省)、country(國家)、period(使用期間)等欄位，是否不建議使用。住址直接在 text 紀錄即可。</p>
+        <p>ii.	應可記錄繁體或簡體中文，須測試其跨系統互通。例如病人住在大陸，台灣醫院系統可否紀錄及處理簡體住址。</p>
+        <p>iii.	是否提供英文代碼之中文對應， 如address.use code之中文對應，以利在使用介面上呈現。</p>
+        <p>iv.	當病人在 FHIR server上有多個地址資訊，是否可設定及選擇僅提供其中幾個住址。 Telcom 聯絡資訊也有類似議題。</p>  
+ <hr>
+    </div>
+    </body>
+</html>
