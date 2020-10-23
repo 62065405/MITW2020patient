@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
+<head>
         <title>Communication</title>
         <style>
             h1{
@@ -53,14 +51,17 @@
         <h3>格式如下:</h3>
         <pre>
            "Communication": [
-           {
-            
-                   "system": "http://hl7.org/fhir/ValueSet/languages",
-                   
-                   }
-                 ]
-               }
-             ]
+                {
+                    "system": "http://hl7.org/fhir/ValueSet/languages",
+                    "language" : "zh",
+                    "prefferd" : true
+                },
+                {
+                    "system": "http://hl7.org/fhir/ValueSet/languages",
+                    "language" : "en",
+                    "prefferd" : false
+                } 
+            ]
         </pre>
     </div>
     <hr>
